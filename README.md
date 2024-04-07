@@ -1,0 +1,1 @@
+# vscode-extension-css-variables-snippets
