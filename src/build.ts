@@ -1,8 +1,8 @@
 import chalk from 'chalk'
 import fs from 'node:fs'
 import readmeTmpRaw from './readmeTmp.md?raw'
-import vscodeVariables from './vscode-known-variables.json'
-import vscodeVariablesRaw from './vscode-known-variables.json?raw'
+import variables from './variables.json'
+import variablesRaw from './variables.json?raw'
 
 const keeps = {
   'z index': 'z-index'
@@ -34,33 +34,33 @@ const readmePath = 'README.md'
  */
 function buildSnippets() {
   // 创建代码片段
-  for (const variables of Object.values(vscodeVariables)) {
-    for (const variable of variables) {
-      const name = getNameByVariable(variable)
+  for (const { variable, description } of variables) {
+    const name = getNameByVariable(variable)
 
-      // --variables
-      codeSnippets[name] = {
-        prefix: [variable, name.replaceAll(/\s+/ig, '-')],
-        body: variable,
-        description: name
-      }
+    const title = name.replaceAll(/\\./ig, ' ').replace('vscode ', '')
 
-      // var(--variables)
-      codeSnippets[`var ${name}`] = {
-        prefix: 'var-' + name.replaceAll(/\s+/ig, '-'),
-        body: `var(${variable})`,
-        description: name
-      }
+    // --variables
+    codeSnippets[title] = {
+      prefix: [variable, name.replaceAll(/\s+/ig, '-')],
+      body: variable,
+      description: description
+    }
+
+    // var(--variables)
+    codeSnippets[`var ${title}`] = {
+      prefix: 'var-' + name.replaceAll(/\s+/ig, '-'),
+      body: `var(${variable})`,
+      description: description
     }
   }
-  fs.writeFileSync(snippetsPath, JSON.stringify(codeSnippets, undefined, 4))
+  fs.writeFileSync(snippetsPath, JSON.stringify(codeSnippets, undefined, 2))
 }
 
 /**
  * 构建 README
  */
 function buildReadme() {
-  const readme = readmeTmpRaw.replace('[[variables]]', vscodeVariablesRaw)
+  const readme = readmeTmpRaw.replace('[[variables]]', variablesRaw)
   fs.writeFileSync(readmePath, readme, 'utf-8')
 }
 

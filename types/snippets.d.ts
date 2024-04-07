@@ -12,3 +12,8 @@ declare interface Snippets {
 declare interface CodeSnippets {
   [key: string]: Snippets
 }
+
+declare interface Variable {
+  variable: string
+  description: string
+}

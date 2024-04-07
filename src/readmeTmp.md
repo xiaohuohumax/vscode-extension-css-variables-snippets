@@ -32,9 +32,24 @@ var-vscode-activityBar-border => var(--vscode-activityBar-border)
 ![base](https://cdn.jsdelivr.net/gh/xiaohuohumax/vscode-extension-css-variables-snippets/images/base.gif)
 ![var](https://cdn.jsdelivr.net/gh/xiaohuohumax/vscode-extension-css-variables-snippets/images/var.gif)
 
-## VSCode known variables
+## VSCode css variables
 
-[vscode-known-variables.json](https://github.com/microsoft/vscode/blob/main/build/lib/stylelint/vscode-known-variables.json)
+```ts
+// variables.json
+[
+  {
+    "variable": "--vscode-button-background",
+    "description": "Button background color"
+  },
+]
+
+// vscode source code
+export const buttonBackground = registerColor('button.background',
+	{ dark: '#0E639C', light: '#007ACC', hcDark: null, hcLight: '#0F4A85' },
+	nls.localize('buttonBackground', "Button background color."));
+```
+
+[variables.json](https://cdn.jsdelivr.net/gh/xiaohuohumax/vscode-extension-css-variables-snippets/src/variables.json)
 
 ```json
 [[variables]]
