@@ -1,0 +1,11 @@
+!.vscode
+.git*
+node_modules
+
+.vscodeignore
+.editorconfig
+.formatignore
+*.png
+*.md
+*.gif
+LICENSE

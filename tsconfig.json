@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ESNext",
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
+    "types": [
+      "node",
+      "vite/client"
+    ],
+    "strict": true,
+    "moduleResolution": "Bundler"
+  },
+  "include": [
+    "src",
+    "types"
+  ]
+}
