@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.3.1
+
+### Patch Changes
+
+- [`32f1818`](https://github.com/xiaohuohumax/vscode-extension-css-variables-snippets/commit/32f1818a37dc9300fd845af261ca3c11ec7fac13) Thanks [@xiaohuohumax](https://github.com/xiaohuohumax)! - 发布流程修改
+
 ## 0.3.0
 
 ### Minor Changes
