@@ -1,5 +1,15 @@
 # Change Log
 
+## 0.3.0
+
+### Minor Changes
+
+- [`94c7013`](https://github.com/xiaohuohumax/vscode-extension-css-variables-snippets/commit/94c7013c45c15cbd440b5b0ed4e278e37563e1ad) Thanks [@xiaohuohumax](https://github.com/xiaohuohumax)! - 样式变量获取方式修改为 babel 解析 vscode 源码
+
+### Patch Changes
+
+- [`9c0a59c`](https://github.com/xiaohuohumax/vscode-extension-css-variables-snippets/commit/9c0a59cb829043ceb9c9dbdcc6ea3836ab8ab3b5) Thanks [@xiaohuohumax](https://github.com/xiaohuohumax)! - 发布流程 BUG 修复, changeset 版本未更改提前发布
+
 ## 0.2.0
 
 ### Minor Changes
