@@ -1,6 +1,7 @@
 name: Publish VSCode Extension
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
@@ -24,6 +25,9 @@ jobs:
 
       - name: Install
         run: npm install --frozen-lockfile
+
+      - name: Build
+        run: npm run build
 
       - name: Create Release Pull Request
         id: changesets

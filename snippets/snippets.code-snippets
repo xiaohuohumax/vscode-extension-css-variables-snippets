@@ -38,31 +38,252 @@
     "body": "var(--vscode-font-size)",
     "description": "Font size"
   },
-  "keybindingTable headerBackground": {
+  "editor font family": {
     "prefix": [
-      "--vscode-keybindingTable-headerBackground",
-      "vscode-keybindingTable-headerBackground"
+      "--vscode-editor-font-family",
+      "vscode-editor-font-family"
     ],
-    "body": "--vscode-keybindingTable-headerBackground",
-    "description": "Background color for the keyboard shortcuts table header"
+    "body": "--vscode-editor-font-family",
+    "description": "Editor font family"
   },
-  "var keybindingTable headerBackground": {
-    "prefix": "var-vscode-keybindingTable-headerBackground",
-    "body": "var(--vscode-keybindingTable-headerBackground)",
-    "description": "Background color for the keyboard shortcuts table header"
+  "var editor font family": {
+    "prefix": "var-vscode-editor-font-family",
+    "body": "var(--vscode-editor-font-family)",
+    "description": "Editor font family"
   },
-  "keybindingTable rowsBackground": {
+  "editor font weight": {
     "prefix": [
-      "--vscode-keybindingTable-rowsBackground",
-      "vscode-keybindingTable-rowsBackground"
+      "--vscode-editor-font-weight",
+      "vscode-editor-font-weight"
     ],
-    "body": "--vscode-keybindingTable-rowsBackground",
-    "description": "Background color for the keyboard shortcuts table alternating rows"
+    "body": "--vscode-editor-font-weight",
+    "description": "Editor font weight"
   },
-  "var keybindingTable rowsBackground": {
-    "prefix": "var-vscode-keybindingTable-rowsBackground",
-    "body": "var(--vscode-keybindingTable-rowsBackground)",
-    "description": "Background color for the keyboard shortcuts table alternating rows"
+  "var editor font weight": {
+    "prefix": "var-vscode-editor-font-weight",
+    "body": "var(--vscode-editor-font-weight)",
+    "description": "Editor font weight"
+  },
+  "editor font size": {
+    "prefix": [
+      "--vscode-editor-font-size",
+      "vscode-editor-font-size"
+    ],
+    "body": "--vscode-editor-font-size",
+    "description": "Editor font size"
+  },
+  "var editor font size": {
+    "prefix": "var-vscode-editor-font-size",
+    "body": "var(--vscode-editor-font-size)",
+    "description": "Editor font size"
+  },
+  "terminal ansiBlack": {
+    "prefix": [
+      "--vscode-terminal-ansiBlack",
+      "vscode-terminal-ansiBlack"
+    ],
+    "body": "--vscode-terminal-ansiBlack",
+    "description": "'Black' ANSI color in the terminal"
+  },
+  "var terminal ansiBlack": {
+    "prefix": "var-vscode-terminal-ansiBlack",
+    "body": "var(--vscode-terminal-ansiBlack)",
+    "description": "'Black' ANSI color in the terminal"
+  },
+  "terminal ansiRed": {
+    "prefix": [
+      "--vscode-terminal-ansiRed",
+      "vscode-terminal-ansiRed"
+    ],
+    "body": "--vscode-terminal-ansiRed",
+    "description": "'Red' ANSI color in the terminal"
+  },
+  "var terminal ansiRed": {
+    "prefix": "var-vscode-terminal-ansiRed",
+    "body": "var(--vscode-terminal-ansiRed)",
+    "description": "'Red' ANSI color in the terminal"
+  },
+  "terminal ansiGreen": {
+    "prefix": [
+      "--vscode-terminal-ansiGreen",
+      "vscode-terminal-ansiGreen"
+    ],
+    "body": "--vscode-terminal-ansiGreen",
+    "description": "'Green' ANSI color in the terminal"
+  },
+  "var terminal ansiGreen": {
+    "prefix": "var-vscode-terminal-ansiGreen",
+    "body": "var(--vscode-terminal-ansiGreen)",
+    "description": "'Green' ANSI color in the terminal"
+  },
+  "terminal ansiYellow": {
+    "prefix": [
+      "--vscode-terminal-ansiYellow",
+      "vscode-terminal-ansiYellow"
+    ],
+    "body": "--vscode-terminal-ansiYellow",
+    "description": "'Yellow' ANSI color in the terminal"
+  },
+  "var terminal ansiYellow": {
+    "prefix": "var-vscode-terminal-ansiYellow",
+    "body": "var(--vscode-terminal-ansiYellow)",
+    "description": "'Yellow' ANSI color in the terminal"
+  },
+  "terminal ansiBlue": {
+    "prefix": [
+      "--vscode-terminal-ansiBlue",
+      "vscode-terminal-ansiBlue"
+    ],
+    "body": "--vscode-terminal-ansiBlue",
+    "description": "'Blue' ANSI color in the terminal"
+  },
+  "var terminal ansiBlue": {
+    "prefix": "var-vscode-terminal-ansiBlue",
+    "body": "var(--vscode-terminal-ansiBlue)",
+    "description": "'Blue' ANSI color in the terminal"
+  },
+  "terminal ansiMagenta": {
+    "prefix": [
+      "--vscode-terminal-ansiMagenta",
+      "vscode-terminal-ansiMagenta"
+    ],
+    "body": "--vscode-terminal-ansiMagenta",
+    "description": "'Magenta' ANSI color in the terminal"
+  },
+  "var terminal ansiMagenta": {
+    "prefix": "var-vscode-terminal-ansiMagenta",
+    "body": "var(--vscode-terminal-ansiMagenta)",
+    "description": "'Magenta' ANSI color in the terminal"
+  },
+  "terminal ansiCyan": {
+    "prefix": [
+      "--vscode-terminal-ansiCyan",
+      "vscode-terminal-ansiCyan"
+    ],
+    "body": "--vscode-terminal-ansiCyan",
+    "description": "'Cyan' ANSI color in the terminal"
+  },
+  "var terminal ansiCyan": {
+    "prefix": "var-vscode-terminal-ansiCyan",
+    "body": "var(--vscode-terminal-ansiCyan)",
+    "description": "'Cyan' ANSI color in the terminal"
+  },
+  "terminal ansiWhite": {
+    "prefix": [
+      "--vscode-terminal-ansiWhite",
+      "vscode-terminal-ansiWhite"
+    ],
+    "body": "--vscode-terminal-ansiWhite",
+    "description": "'White' ANSI color in the terminal"
+  },
+  "var terminal ansiWhite": {
+    "prefix": "var-vscode-terminal-ansiWhite",
+    "body": "var(--vscode-terminal-ansiWhite)",
+    "description": "'White' ANSI color in the terminal"
+  },
+  "terminal ansiBrightBlack": {
+    "prefix": [
+      "--vscode-terminal-ansiBrightBlack",
+      "vscode-terminal-ansiBrightBlack"
+    ],
+    "body": "--vscode-terminal-ansiBrightBlack",
+    "description": "'BrightBlack' ANSI color in the terminal"
+  },
+  "var terminal ansiBrightBlack": {
+    "prefix": "var-vscode-terminal-ansiBrightBlack",
+    "body": "var(--vscode-terminal-ansiBrightBlack)",
+    "description": "'BrightBlack' ANSI color in the terminal"
+  },
+  "terminal ansiBrightRed": {
+    "prefix": [
+      "--vscode-terminal-ansiBrightRed",
+      "vscode-terminal-ansiBrightRed"
+    ],
+    "body": "--vscode-terminal-ansiBrightRed",
+    "description": "'BrightRed' ANSI color in the terminal"
+  },
+  "var terminal ansiBrightRed": {
+    "prefix": "var-vscode-terminal-ansiBrightRed",
+    "body": "var(--vscode-terminal-ansiBrightRed)",
+    "description": "'BrightRed' ANSI color in the terminal"
+  },
+  "terminal ansiBrightGreen": {
+    "prefix": [
+      "--vscode-terminal-ansiBrightGreen",
+      "vscode-terminal-ansiBrightGreen"
+    ],
+    "body": "--vscode-terminal-ansiBrightGreen",
+    "description": "'BrightGreen' ANSI color in the terminal"
+  },
+  "var terminal ansiBrightGreen": {
+    "prefix": "var-vscode-terminal-ansiBrightGreen",
+    "body": "var(--vscode-terminal-ansiBrightGreen)",
+    "description": "'BrightGreen' ANSI color in the terminal"
+  },
+  "terminal ansiBrightYellow": {
+    "prefix": [
+      "--vscode-terminal-ansiBrightYellow",
+      "vscode-terminal-ansiBrightYellow"
+    ],
+    "body": "--vscode-terminal-ansiBrightYellow",
+    "description": "'BrightYellow' ANSI color in the terminal"
+  },
+  "var terminal ansiBrightYellow": {
+    "prefix": "var-vscode-terminal-ansiBrightYellow",
+    "body": "var(--vscode-terminal-ansiBrightYellow)",
+    "description": "'BrightYellow' ANSI color in the terminal"
+  },
+  "terminal ansiBrightBlue": {
+    "prefix": [
+      "--vscode-terminal-ansiBrightBlue",
+      "vscode-terminal-ansiBrightBlue"
+    ],
+    "body": "--vscode-terminal-ansiBrightBlue",
+    "description": "'BrightBlue' ANSI color in the terminal"
+  },
+  "var terminal ansiBrightBlue": {
+    "prefix": "var-vscode-terminal-ansiBrightBlue",
+    "body": "var(--vscode-terminal-ansiBrightBlue)",
+    "description": "'BrightBlue' ANSI color in the terminal"
+  },
+  "terminal ansiBrightMagenta": {
+    "prefix": [
+      "--vscode-terminal-ansiBrightMagenta",
+      "vscode-terminal-ansiBrightMagenta"
+    ],
+    "body": "--vscode-terminal-ansiBrightMagenta",
+    "description": "'BrightMagenta' ANSI color in the terminal"
+  },
+  "var terminal ansiBrightMagenta": {
+    "prefix": "var-vscode-terminal-ansiBrightMagenta",
+    "body": "var(--vscode-terminal-ansiBrightMagenta)",
+    "description": "'BrightMagenta' ANSI color in the terminal"
+  },
+  "terminal ansiBrightCyan": {
+    "prefix": [
+      "--vscode-terminal-ansiBrightCyan",
+      "vscode-terminal-ansiBrightCyan"
+    ],
+    "body": "--vscode-terminal-ansiBrightCyan",
+    "description": "'BrightCyan' ANSI color in the terminal"
+  },
+  "var terminal ansiBrightCyan": {
+    "prefix": "var-vscode-terminal-ansiBrightCyan",
+    "body": "var(--vscode-terminal-ansiBrightCyan)",
+    "description": "'BrightCyan' ANSI color in the terminal"
+  },
+  "terminal ansiBrightWhite": {
+    "prefix": [
+      "--vscode-terminal-ansiBrightWhite",
+      "vscode-terminal-ansiBrightWhite"
+    ],
+    "body": "--vscode-terminal-ansiBrightWhite",
+    "description": "'BrightWhite' ANSI color in the terminal"
+  },
+  "var terminal ansiBrightWhite": {
+    "prefix": "var-vscode-terminal-ansiBrightWhite",
+    "body": "var(--vscode-terminal-ansiBrightWhite)",
+    "description": "'BrightWhite' ANSI color in the terminal"
   },
   "diffEditor move border": {
     "prefix": [
@@ -141,45 +362,6 @@
     "prefix": "var-vscode-multiDiffEditor-border",
     "body": "var(--vscode-multiDiffEditor-border)",
     "description": "The border color of the multi file diff editor"
-  },
-  "editor font family": {
-    "prefix": [
-      "--vscode-editor-font-family",
-      "vscode-editor-font-family"
-    ],
-    "body": "--vscode-editor-font-family",
-    "description": "Editor font family"
-  },
-  "var editor font family": {
-    "prefix": "var-vscode-editor-font-family",
-    "body": "var(--vscode-editor-font-family)",
-    "description": "Editor font family"
-  },
-  "editor font weight": {
-    "prefix": [
-      "--vscode-editor-font-weight",
-      "vscode-editor-font-weight"
-    ],
-    "body": "--vscode-editor-font-weight",
-    "description": "Editor font weight"
-  },
-  "var editor font weight": {
-    "prefix": "var-vscode-editor-font-weight",
-    "body": "var(--vscode-editor-font-weight)",
-    "description": "Editor font weight"
-  },
-  "editor font size": {
-    "prefix": [
-      "--vscode-editor-font-size",
-      "vscode-editor-font-size"
-    ],
-    "body": "--vscode-editor-font-size",
-    "description": "Editor font size"
-  },
-  "var editor font size": {
-    "prefix": "var-vscode-editor-font-size",
-    "body": "var(--vscode-editor-font-size)",
-    "description": "Editor font size"
   },
   "editor lineHighlightBackground": {
     "prefix": [
@@ -551,12 +733,12 @@
       "vscode-editorActiveLineNumber-foreground"
     ],
     "body": "--vscode-editorActiveLineNumber-foreground",
-    "description": "Id is deprecated. Use 'editorLineNumber.activeForeground' instead"
+    "description": "Color of editor active line number"
   },
   "var editorActiveLineNumber foreground": {
     "prefix": "var-vscode-editorActiveLineNumber-foreground",
     "body": "var(--vscode-editorActiveLineNumber-foreground)",
-    "description": "Id is deprecated. Use 'editorLineNumber.activeForeground' instead"
+    "description": "Color of editor active line number"
   },
   "editorLineNumber activeForeground": {
     "prefix": [
@@ -694,12 +876,12 @@
       "vscode-editorUnnecessaryCode-opacity"
     ],
     "body": "--vscode-editorUnnecessaryCode-opacity",
-    "description": "Opacity of unnecessary (unused) source code in the editor"
+    "description": "Opacity of unnecessary (unused) source code in the editor. For example, \"#000000c0\" will render the code with 75% opacity. For high contrast themes, use the  'editorUnnecessaryCode.border' theme color to underline unnecessary code instead of fading it out"
   },
   "var editorUnnecessaryCode opacity": {
     "prefix": "var-vscode-editorUnnecessaryCode-opacity",
     "body": "var(--vscode-editorUnnecessaryCode-opacity)",
-    "description": "Opacity of unnecessary (unused) source code in the editor"
+    "description": "Opacity of unnecessary (unused) source code in the editor. For example, \"#000000c0\" will render the code with 75% opacity. For high contrast themes, use the  'editorUnnecessaryCode.border' theme color to underline unnecessary code instead of fading it out"
   },
   "editorGhostText border": {
     "prefix": [
@@ -4698,12 +4880,12 @@
       "vscode-minimap-foregroundOpacity"
     ],
     "body": "--vscode-minimap-foregroundOpacity",
-    "description": "Opacity of foreground elements rendered in the minimap. For example, '#000000c0' will render the elements with 75% opacity"
+    "description": "Opacity of foreground elements rendered in the minimap. For example, \"#000000c0\" will render the elements with 75% opacity"
   },
   "var minimap foregroundOpacity": {
     "prefix": "var-vscode-minimap-foregroundOpacity",
     "body": "var(--vscode-minimap-foregroundOpacity)",
-    "description": "Opacity of foreground elements rendered in the minimap. For example, '#000000c0' will render the elements with 75% opacity"
+    "description": "Opacity of foreground elements rendered in the minimap. For example, \"#000000c0\" will render the elements with 75% opacity"
   },
   "minimapSlider background": {
     "prefix": [
@@ -4919,12 +5101,12 @@
       "vscode-quickInput-list\\.focusBackground"
     ],
     "body": "--vscode-quickInput-list\\.focusBackground",
-    "description": "Please use quickInputList.focusBackground instead"
+    "description": ""
   },
   "var quickInput list focusBackground": {
     "prefix": "var-vscode-quickInput-list\\.focusBackground",
     "body": "var(--vscode-quickInput-list\\.focusBackground)",
-    "description": "Please use quickInputList.focusBackground instead"
+    "description": ""
   },
   "quickInputList focusForeground": {
     "prefix": [
@@ -5679,6 +5861,45 @@
     "prefix": "var-vscode-panelSection-border",
     "body": "var(--vscode-panelSection-border)",
     "description": "Panel section border color used when multiple views are stacked horizontally in the panel. Panels are shown below the editor area and contain views like output and integrated terminal. Panel sections are views nested within the panels"
+  },
+  "panelStickyScroll background": {
+    "prefix": [
+      "--vscode-panelStickyScroll-background",
+      "vscode-panelStickyScroll-background"
+    ],
+    "body": "--vscode-panelStickyScroll-background",
+    "description": "Background color of sticky scroll in the panel"
+  },
+  "var panelStickyScroll background": {
+    "prefix": "var-vscode-panelStickyScroll-background",
+    "body": "var(--vscode-panelStickyScroll-background)",
+    "description": "Background color of sticky scroll in the panel"
+  },
+  "panelStickyScroll border": {
+    "prefix": [
+      "--vscode-panelStickyScroll-border",
+      "vscode-panelStickyScroll-border"
+    ],
+    "body": "--vscode-panelStickyScroll-border",
+    "description": "Border color of sticky scroll in the panel"
+  },
+  "var panelStickyScroll border": {
+    "prefix": "var-vscode-panelStickyScroll-border",
+    "body": "var(--vscode-panelStickyScroll-border)",
+    "description": "Border color of sticky scroll in the panel"
+  },
+  "panelStickyScroll shadow": {
+    "prefix": [
+      "--vscode-panelStickyScroll-shadow",
+      "vscode-panelStickyScroll-shadow"
+    ],
+    "body": "--vscode-panelStickyScroll-shadow",
+    "description": "Shadow color of sticky scroll in the panel"
+  },
+  "var panelStickyScroll shadow": {
+    "prefix": "var-vscode-panelStickyScroll-shadow",
+    "body": "var(--vscode-panelStickyScroll-shadow)",
+    "description": "Shadow color of sticky scroll in the panel"
   },
   "outputView background": {
     "prefix": [
@@ -6460,6 +6681,19 @@
     "body": "var(--vscode-sideBar-border)",
     "description": "Side bar border color on the side separating to the editor. The side bar is the container for views like explorer and search"
   },
+  "sideBarTitle background": {
+    "prefix": [
+      "--vscode-sideBarTitle-background",
+      "vscode-sideBarTitle-background"
+    ],
+    "body": "--vscode-sideBarTitle-background",
+    "description": "Side bar title background color. The side bar is the container for views like explorer and search"
+  },
+  "var sideBarTitle background": {
+    "prefix": "var-vscode-sideBarTitle-background",
+    "body": "var(--vscode-sideBarTitle-background)",
+    "description": "Side bar title background color. The side bar is the container for views like explorer and search"
+  },
   "sideBarTitle foreground": {
     "prefix": [
       "--vscode-sideBarTitle-foreground",
@@ -6537,6 +6771,45 @@
     "prefix": "var-vscode-sideBarActivityBarTop-border",
     "body": "var(--vscode-sideBarActivityBarTop-border)",
     "description": "Border color between the activity bar at the top/bottom and the views"
+  },
+  "sideBarStickyScroll background": {
+    "prefix": [
+      "--vscode-sideBarStickyScroll-background",
+      "vscode-sideBarStickyScroll-background"
+    ],
+    "body": "--vscode-sideBarStickyScroll-background",
+    "description": "Background color of sticky scroll in the side bar"
+  },
+  "var sideBarStickyScroll background": {
+    "prefix": "var-vscode-sideBarStickyScroll-background",
+    "body": "var(--vscode-sideBarStickyScroll-background)",
+    "description": "Background color of sticky scroll in the side bar"
+  },
+  "sideBarStickyScroll border": {
+    "prefix": [
+      "--vscode-sideBarStickyScroll-border",
+      "vscode-sideBarStickyScroll-border"
+    ],
+    "body": "--vscode-sideBarStickyScroll-border",
+    "description": "Border color of sticky scroll in the side bar"
+  },
+  "var sideBarStickyScroll border": {
+    "prefix": "var-vscode-sideBarStickyScroll-border",
+    "body": "var(--vscode-sideBarStickyScroll-border)",
+    "description": "Border color of sticky scroll in the side bar"
+  },
+  "sideBarStickyScroll shadow": {
+    "prefix": [
+      "--vscode-sideBarStickyScroll-shadow",
+      "vscode-sideBarStickyScroll-shadow"
+    ],
+    "body": "--vscode-sideBarStickyScroll-shadow",
+    "description": "Shadow color of sticky scroll in the side bar"
+  },
+  "var sideBarStickyScroll shadow": {
+    "prefix": "var-vscode-sideBarStickyScroll-shadow",
+    "body": "var(--vscode-sideBarStickyScroll-shadow)",
+    "description": "Shadow color of sticky scroll in the side bar"
   },
   "titleBar activeForeground": {
     "prefix": [
@@ -8182,12 +8455,12 @@
       "vscode-mergeEditor-conflictingLines\\.background"
     ],
     "body": "--vscode-mergeEditor-conflictingLines\\.background",
-    "description": "The background of the 'Conflicting Lines' text"
+    "description": "The background of the \"Conflicting Lines\" text"
   },
   "var mergeEditor conflictingLines background": {
     "prefix": "var-vscode-mergeEditor-conflictingLines\\.background",
     "body": "var(--vscode-mergeEditor-conflictingLines\\.background)",
-    "description": "The background of the 'Conflicting Lines' text"
+    "description": "The background of the \"Conflicting Lines\" text"
   },
   "mergeEditor conflict input1 background": {
     "prefix": [
@@ -8526,6 +8799,32 @@
     "prefix": "var-vscode-notebook-editorBackground",
     "body": "var(--vscode-notebook-editorBackground)",
     "description": "Notebook background color"
+  },
+  "keybindingTable headerBackground": {
+    "prefix": [
+      "--vscode-keybindingTable-headerBackground",
+      "vscode-keybindingTable-headerBackground"
+    ],
+    "body": "--vscode-keybindingTable-headerBackground",
+    "description": "Background color for the keyboard shortcuts table header"
+  },
+  "var keybindingTable headerBackground": {
+    "prefix": "var-vscode-keybindingTable-headerBackground",
+    "body": "var(--vscode-keybindingTable-headerBackground)",
+    "description": "Background color for the keyboard shortcuts table header"
+  },
+  "keybindingTable rowsBackground": {
+    "prefix": [
+      "--vscode-keybindingTable-rowsBackground",
+      "vscode-keybindingTable-rowsBackground"
+    ],
+    "body": "--vscode-keybindingTable-rowsBackground",
+    "description": "Background color for the keyboard shortcuts table alternating rows"
+  },
+  "var keybindingTable rowsBackground": {
+    "prefix": "var-vscode-keybindingTable-rowsBackground",
+    "body": "var(--vscode-keybindingTable-rowsBackground)",
+    "description": "Background color for the keyboard shortcuts table alternating rows"
   },
   "settings headerForeground": {
     "prefix": [
@@ -8994,214 +9293,6 @@
     "prefix": "var-vscode-searchEditor-textInputBorder",
     "body": "var(--vscode-searchEditor-textInputBorder)",
     "description": "Search editor text input box border"
-  },
-  "terminal ansiBlack": {
-    "prefix": [
-      "--vscode-terminal-ansiBlack",
-      "vscode-terminal-ansiBlack"
-    ],
-    "body": "--vscode-terminal-ansiBlack",
-    "description": "Terminal ansiBlack"
-  },
-  "var terminal ansiBlack": {
-    "prefix": "var-vscode-terminal-ansiBlack",
-    "body": "var(--vscode-terminal-ansiBlack)",
-    "description": "Terminal ansiBlack"
-  },
-  "terminal ansiRed": {
-    "prefix": [
-      "--vscode-terminal-ansiRed",
-      "vscode-terminal-ansiRed"
-    ],
-    "body": "--vscode-terminal-ansiRed",
-    "description": "Terminal ansiRed"
-  },
-  "var terminal ansiRed": {
-    "prefix": "var-vscode-terminal-ansiRed",
-    "body": "var(--vscode-terminal-ansiRed)",
-    "description": "Terminal ansiRed"
-  },
-  "terminal ansiGreen": {
-    "prefix": [
-      "--vscode-terminal-ansiGreen",
-      "vscode-terminal-ansiGreen"
-    ],
-    "body": "--vscode-terminal-ansiGreen",
-    "description": "Terminal ansiGreen"
-  },
-  "var terminal ansiGreen": {
-    "prefix": "var-vscode-terminal-ansiGreen",
-    "body": "var(--vscode-terminal-ansiGreen)",
-    "description": "Terminal ansiGreen"
-  },
-  "terminal ansiYellow": {
-    "prefix": [
-      "--vscode-terminal-ansiYellow",
-      "vscode-terminal-ansiYellow"
-    ],
-    "body": "--vscode-terminal-ansiYellow",
-    "description": "Terminal ansiYellow"
-  },
-  "var terminal ansiYellow": {
-    "prefix": "var-vscode-terminal-ansiYellow",
-    "body": "var(--vscode-terminal-ansiYellow)",
-    "description": "Terminal ansiYellow"
-  },
-  "terminal ansiBlue": {
-    "prefix": [
-      "--vscode-terminal-ansiBlue",
-      "vscode-terminal-ansiBlue"
-    ],
-    "body": "--vscode-terminal-ansiBlue",
-    "description": "Terminal ansiBlue"
-  },
-  "var terminal ansiBlue": {
-    "prefix": "var-vscode-terminal-ansiBlue",
-    "body": "var(--vscode-terminal-ansiBlue)",
-    "description": "Terminal ansiBlue"
-  },
-  "terminal ansiMagenta": {
-    "prefix": [
-      "--vscode-terminal-ansiMagenta",
-      "vscode-terminal-ansiMagenta"
-    ],
-    "body": "--vscode-terminal-ansiMagenta",
-    "description": "Terminal ansiMagenta"
-  },
-  "var terminal ansiMagenta": {
-    "prefix": "var-vscode-terminal-ansiMagenta",
-    "body": "var(--vscode-terminal-ansiMagenta)",
-    "description": "Terminal ansiMagenta"
-  },
-  "terminal ansiCyan": {
-    "prefix": [
-      "--vscode-terminal-ansiCyan",
-      "vscode-terminal-ansiCyan"
-    ],
-    "body": "--vscode-terminal-ansiCyan",
-    "description": "Terminal ansiCyan"
-  },
-  "var terminal ansiCyan": {
-    "prefix": "var-vscode-terminal-ansiCyan",
-    "body": "var(--vscode-terminal-ansiCyan)",
-    "description": "Terminal ansiCyan"
-  },
-  "terminal ansiWhite": {
-    "prefix": [
-      "--vscode-terminal-ansiWhite",
-      "vscode-terminal-ansiWhite"
-    ],
-    "body": "--vscode-terminal-ansiWhite",
-    "description": "Terminal ansiWhite"
-  },
-  "var terminal ansiWhite": {
-    "prefix": "var-vscode-terminal-ansiWhite",
-    "body": "var(--vscode-terminal-ansiWhite)",
-    "description": "Terminal ansiWhite"
-  },
-  "terminal ansiBrightBlack": {
-    "prefix": [
-      "--vscode-terminal-ansiBrightBlack",
-      "vscode-terminal-ansiBrightBlack"
-    ],
-    "body": "--vscode-terminal-ansiBrightBlack",
-    "description": "Terminal ansiBrightBlack"
-  },
-  "var terminal ansiBrightBlack": {
-    "prefix": "var-vscode-terminal-ansiBrightBlack",
-    "body": "var(--vscode-terminal-ansiBrightBlack)",
-    "description": "Terminal ansiBrightBlack"
-  },
-  "terminal ansiBrightRed": {
-    "prefix": [
-      "--vscode-terminal-ansiBrightRed",
-      "vscode-terminal-ansiBrightRed"
-    ],
-    "body": "--vscode-terminal-ansiBrightRed",
-    "description": "Terminal ansiBrightRed"
-  },
-  "var terminal ansiBrightRed": {
-    "prefix": "var-vscode-terminal-ansiBrightRed",
-    "body": "var(--vscode-terminal-ansiBrightRed)",
-    "description": "Terminal ansiBrightRed"
-  },
-  "terminal ansiBrightGreen": {
-    "prefix": [
-      "--vscode-terminal-ansiBrightGreen",
-      "vscode-terminal-ansiBrightGreen"
-    ],
-    "body": "--vscode-terminal-ansiBrightGreen",
-    "description": "Terminal ansiBrightGreen"
-  },
-  "var terminal ansiBrightGreen": {
-    "prefix": "var-vscode-terminal-ansiBrightGreen",
-    "body": "var(--vscode-terminal-ansiBrightGreen)",
-    "description": "Terminal ansiBrightGreen"
-  },
-  "terminal ansiBrightYellow": {
-    "prefix": [
-      "--vscode-terminal-ansiBrightYellow",
-      "vscode-terminal-ansiBrightYellow"
-    ],
-    "body": "--vscode-terminal-ansiBrightYellow",
-    "description": "Terminal ansiBrightYellow"
-  },
-  "var terminal ansiBrightYellow": {
-    "prefix": "var-vscode-terminal-ansiBrightYellow",
-    "body": "var(--vscode-terminal-ansiBrightYellow)",
-    "description": "Terminal ansiBrightYellow"
-  },
-  "terminal ansiBrightBlue": {
-    "prefix": [
-      "--vscode-terminal-ansiBrightBlue",
-      "vscode-terminal-ansiBrightBlue"
-    ],
-    "body": "--vscode-terminal-ansiBrightBlue",
-    "description": "Terminal ansiBrightBlue"
-  },
-  "var terminal ansiBrightBlue": {
-    "prefix": "var-vscode-terminal-ansiBrightBlue",
-    "body": "var(--vscode-terminal-ansiBrightBlue)",
-    "description": "Terminal ansiBrightBlue"
-  },
-  "terminal ansiBrightMagenta": {
-    "prefix": [
-      "--vscode-terminal-ansiBrightMagenta",
-      "vscode-terminal-ansiBrightMagenta"
-    ],
-    "body": "--vscode-terminal-ansiBrightMagenta",
-    "description": "Terminal ansiBrightMagenta"
-  },
-  "var terminal ansiBrightMagenta": {
-    "prefix": "var-vscode-terminal-ansiBrightMagenta",
-    "body": "var(--vscode-terminal-ansiBrightMagenta)",
-    "description": "Terminal ansiBrightMagenta"
-  },
-  "terminal ansiBrightCyan": {
-    "prefix": [
-      "--vscode-terminal-ansiBrightCyan",
-      "vscode-terminal-ansiBrightCyan"
-    ],
-    "body": "--vscode-terminal-ansiBrightCyan",
-    "description": "Terminal ansiBrightCyan"
-  },
-  "var terminal ansiBrightCyan": {
-    "prefix": "var-vscode-terminal-ansiBrightCyan",
-    "body": "var(--vscode-terminal-ansiBrightCyan)",
-    "description": "Terminal ansiBrightCyan"
-  },
-  "terminal ansiBrightWhite": {
-    "prefix": [
-      "--vscode-terminal-ansiBrightWhite",
-      "vscode-terminal-ansiBrightWhite"
-    ],
-    "body": "--vscode-terminal-ansiBrightWhite",
-    "description": "Terminal ansiBrightWhite"
-  },
-  "var terminal ansiBrightWhite": {
-    "prefix": "var-vscode-terminal-ansiBrightWhite",
-    "body": "var(--vscode-terminal-ansiBrightWhite)",
-    "description": "Terminal ansiBrightWhite"
   },
   "terminal background": {
     "prefix": [
@@ -9982,135 +10073,5 @@
     "prefix": "var-vscode-walkThrough-embeddedEditorBackground",
     "body": "var(--vscode-walkThrough-embeddedEditorBackground)",
     "description": "Background color for the embedded editors on the Interactive Playground"
-  },
-  "gitDecoration addedResourceForeground": {
-    "prefix": [
-      "--vscode-gitDecoration-addedResourceForeground",
-      "vscode-gitDecoration-addedResourceForeground"
-    ],
-    "body": "--vscode-gitDecoration-addedResourceForeground",
-    "description": "Color for added resources"
-  },
-  "var gitDecoration addedResourceForeground": {
-    "prefix": "var-vscode-gitDecoration-addedResourceForeground",
-    "body": "var(--vscode-gitDecoration-addedResourceForeground)",
-    "description": "Color for added resources"
-  },
-  "gitDecoration modifiedResourceForeground": {
-    "prefix": [
-      "--vscode-gitDecoration-modifiedResourceForeground",
-      "vscode-gitDecoration-modifiedResourceForeground"
-    ],
-    "body": "--vscode-gitDecoration-modifiedResourceForeground",
-    "description": "Color for modified resources"
-  },
-  "var gitDecoration modifiedResourceForeground": {
-    "prefix": "var-vscode-gitDecoration-modifiedResourceForeground",
-    "body": "var(--vscode-gitDecoration-modifiedResourceForeground)",
-    "description": "Color for modified resources"
-  },
-  "gitDecoration deletedResourceForeground": {
-    "prefix": [
-      "--vscode-gitDecoration-deletedResourceForeground",
-      "vscode-gitDecoration-deletedResourceForeground"
-    ],
-    "body": "--vscode-gitDecoration-deletedResourceForeground",
-    "description": "Color for deleted resources"
-  },
-  "var gitDecoration deletedResourceForeground": {
-    "prefix": "var-vscode-gitDecoration-deletedResourceForeground",
-    "body": "var(--vscode-gitDecoration-deletedResourceForeground)",
-    "description": "Color for deleted resources"
-  },
-  "gitDecoration renamedResourceForeground": {
-    "prefix": [
-      "--vscode-gitDecoration-renamedResourceForeground",
-      "vscode-gitDecoration-renamedResourceForeground"
-    ],
-    "body": "--vscode-gitDecoration-renamedResourceForeground",
-    "description": "Color for renamed or copied resources"
-  },
-  "var gitDecoration renamedResourceForeground": {
-    "prefix": "var-vscode-gitDecoration-renamedResourceForeground",
-    "body": "var(--vscode-gitDecoration-renamedResourceForeground)",
-    "description": "Color for renamed or copied resources"
-  },
-  "gitDecoration untrackedResourceForeground": {
-    "prefix": [
-      "--vscode-gitDecoration-untrackedResourceForeground",
-      "vscode-gitDecoration-untrackedResourceForeground"
-    ],
-    "body": "--vscode-gitDecoration-untrackedResourceForeground",
-    "description": "Color for untracked resources"
-  },
-  "var gitDecoration untrackedResourceForeground": {
-    "prefix": "var-vscode-gitDecoration-untrackedResourceForeground",
-    "body": "var(--vscode-gitDecoration-untrackedResourceForeground)",
-    "description": "Color for untracked resources"
-  },
-  "gitDecoration ignoredResourceForeground": {
-    "prefix": [
-      "--vscode-gitDecoration-ignoredResourceForeground",
-      "vscode-gitDecoration-ignoredResourceForeground"
-    ],
-    "body": "--vscode-gitDecoration-ignoredResourceForeground",
-    "description": "Color for ignored resources"
-  },
-  "var gitDecoration ignoredResourceForeground": {
-    "prefix": "var-vscode-gitDecoration-ignoredResourceForeground",
-    "body": "var(--vscode-gitDecoration-ignoredResourceForeground)",
-    "description": "Color for ignored resources"
-  },
-  "gitDecoration stageModifiedResourceForeground": {
-    "prefix": [
-      "--vscode-gitDecoration-stageModifiedResourceForeground",
-      "vscode-gitDecoration-stageModifiedResourceForeground"
-    ],
-    "body": "--vscode-gitDecoration-stageModifiedResourceForeground",
-    "description": "Color for modified resources which have been staged"
-  },
-  "var gitDecoration stageModifiedResourceForeground": {
-    "prefix": "var-vscode-gitDecoration-stageModifiedResourceForeground",
-    "body": "var(--vscode-gitDecoration-stageModifiedResourceForeground)",
-    "description": "Color for modified resources which have been staged"
-  },
-  "gitDecoration stageDeletedResourceForeground": {
-    "prefix": [
-      "--vscode-gitDecoration-stageDeletedResourceForeground",
-      "vscode-gitDecoration-stageDeletedResourceForeground"
-    ],
-    "body": "--vscode-gitDecoration-stageDeletedResourceForeground",
-    "description": "Color for deleted resources which have been staged"
-  },
-  "var gitDecoration stageDeletedResourceForeground": {
-    "prefix": "var-vscode-gitDecoration-stageDeletedResourceForeground",
-    "body": "var(--vscode-gitDecoration-stageDeletedResourceForeground)",
-    "description": "Color for deleted resources which have been staged"
-  },
-  "gitDecoration conflictingResourceForeground": {
-    "prefix": [
-      "--vscode-gitDecoration-conflictingResourceForeground",
-      "vscode-gitDecoration-conflictingResourceForeground"
-    ],
-    "body": "--vscode-gitDecoration-conflictingResourceForeground",
-    "description": "Color for resources with conflicts"
-  },
-  "var gitDecoration conflictingResourceForeground": {
-    "prefix": "var-vscode-gitDecoration-conflictingResourceForeground",
-    "body": "var(--vscode-gitDecoration-conflictingResourceForeground)",
-    "description": "Color for resources with conflicts"
-  },
-  "gitDecoration submoduleResourceForeground": {
-    "prefix": [
-      "--vscode-gitDecoration-submoduleResourceForeground",
-      "vscode-gitDecoration-submoduleResourceForeground"
-    ],
-    "body": "--vscode-gitDecoration-submoduleResourceForeground",
-    "description": "Color for submodule resources"
-  },
-  "var gitDecoration submoduleResourceForeground": {
-    "prefix": "var-vscode-gitDecoration-submoduleResourceForeground",
-    "body": "var(--vscode-gitDecoration-submoduleResourceForeground)",
-    "description": "Color for submodule resources"
   }
 }
