@@ -2,7 +2,7 @@
   "name": "vscode-extension-css-variables-snippets",
   "displayName": "VSCode Extension CSS Variables Snippets",
   "description": "VSCode extension css variables snippets",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "private": true,
   "publisher": "xiaohuohumax",
   "icon": "icon.png",
