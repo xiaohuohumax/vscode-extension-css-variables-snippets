@@ -13,7 +13,7 @@ import log from "./log";
  * @param variable 样式变量
  * @returns 
  */
-function formatVariableBase(variable: Variable): Variable {
+function formatBaseVariable(variable: Variable): Variable {
   return {
     ...variable,
     variable: constants.prefix + '-' + variable.variable.replaceAll('.', '-')
@@ -32,13 +32,14 @@ function formatVariableBase(variable: Variable): Variable {
  * @param variable 样式变量
  * @returns 
  */
-function formatVariableExt(variable: Variable): Variable {
+function formatEscapeVariable(variable: Variable): Variable {
   return {
     ...variable,
     variable: constants.prefix + '-' + variable.variable.replace('.', '-').replaceAll('.', '\\.'),
   }
 }
 
+// 缓存样式变量
 let cachedVariables: Variable[] | undefined
 
 interface WorkbenchColors {
@@ -49,46 +50,58 @@ interface WorkbenchColors {
   }
 }
 
-async function cacheVariables(): Promise<Variable[]> {
-  let variables: Variable[] = []
+/**
+ * 获取样式变量
+ * @returns 
+ */
+async function getVariables(): Promise<Variable[]> {
+  const variables: { [key: string]: Variable } = {}
 
   try {
+    // 通过格式化文档获取主题变量
     const doc = await workspace.openTextDocument(constants.workspaceColorsDocUri)
-
     const workbenchColors = await JSON.parse(doc.getText()) as WorkbenchColors;
 
     for (const [variable, { description }] of Object.entries(workbenchColors.properties)) {
-      variables.push({ variable, description })
+      // 基础格式
+      const variableBase = formatBaseVariable({ variable, description })
+      variables[variableBase.variable] = variableBase
+
+      // 转义格式
+      const variableEscape = formatEscapeVariable({ variable, description })
+      variables[variableEscape.variable] = variableEscape
+
     }
   } catch (err) {
     log.error('Failed to load workspace colors document', err)
   }
 
-  variables = variables.map(v => {
-    const variableBase = formatVariableBase(v)
-    const variableExt = formatVariableExt(v)
-    return variableBase.variable !== variableExt.variable
-      ? [variableBase, variableExt]
-      : [variableBase]
-  }).flat(1)
+  constants.baseVariables.forEach(v => {
+    const variable = formatBaseVariable(v)
+    variables[variable.variable] = variable
+  })
 
-  constants.baseVariables.forEach(v => variables.push(formatVariableBase(v)))
-  log.debug(`Found ${variables.length} variables`)
+  log.debug(`Found ${Object.keys(variables).length} variables`)
 
-  return variables
+  return Object.values(variables)
 }
 
+// 监听文档变化
 workspace.onDidChangeTextDocument(async e => {
   if (e.document.uri.path === constants.workspaceColorsDocUri.path) {
     log.info('Workspace colors document changed, reloading variables')
-    cachedVariables = await cacheVariables()
+    cachedVariables = await getVariables()
   }
 })
 
-export async function getColorVariables(): Promise<Variable[]> {
+/**
+ * 获取缓存的样式变量
+ * @returns 
+ */
+export async function getColorVariablesByCache(): Promise<Variable[]> {
   if (!cachedVariables) {
     log.info('Loading variables')
-    cachedVariables = await cacheVariables()
+    cachedVariables = await getVariables()
   }
   return cachedVariables
 }

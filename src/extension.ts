@@ -1,13 +1,13 @@
 import * as vscode from 'vscode';
 import constants from './constants';
 import log from './log';
-import { getColorVariables } from './variables';
+import { getColorVariablesByCache } from './variables';
 
 export async function activate(context: vscode.ExtensionContext) {
   log.debug('Extension activated')
 
   async function provideCompletionItems(document: vscode.TextDocument, position: vscode.Position) {
-    const colorVariables = await getColorVariables()
+    const colorVariables = await getColorVariablesByCache()
 
     return new vscode.CompletionList(
       colorVariables.map((c) => {
