@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.4.0
+
+### Minor Changes
+
+- [`72c5fb3`](https://github.com/xiaohuohumax/vscode-theme-css-variables/commit/72c5fb33929b855210ad50e121b2ba2712ef479b) Thanks [@xiaohuohumax](https://github.com/xiaohuohumax)! - 样式变量改为从当前环境获取
+
 ## 0.3.1
 
 ### Patch Changes
