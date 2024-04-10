@@ -1,14 +1,14 @@
 {
-  "name": "vscode-extension-css-variables-snippets",
-  "displayName": "VSCode Extension CSS Variables Snippets",
-  "description": "VSCode extension css variables snippets",
+  "name": "vscode-theme-css-variables",
+  "displayName": "VSCode Theme CSS Variables",
+  "description": "VSCode theme css variables snippets",
   "version": "0.3.1",
   "private": true,
   "publisher": "xiaohuohumax",
   "icon": "icon.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/xiaohuohumax/vscode-extension-css-variables-snippets.git"
+    "url": "https://github.com/xiaohuohumax/vscode-theme-css-variables.git"
   },
   "engines": {
     "vscode": "^1.88.0"
@@ -16,47 +16,44 @@
   "categories": [
     "Snippets"
   ],
+  "main": "./out/extension.js",
+  "browser": "./out/extension.js",
   "keywords": [
     "vscode extension",
     "style variables",
     "css variables",
     "css variables snippets",
-    "webview"
+    "webview",
+    "vscode theme",
+    "theme css variables"
+  ],
+  "activationEvents": [
+    "onLanguage:css",
+    "onLanguage:less",
+    "onLanguage:scss",
+    "onLanguage:sass",
+    "onLanguage:stylus",
+    "onLanguage:html",
+    "onLanguage:svelte"
   ],
   "scripts": {
     "vscode:prepublish": "npm run build",
-    "build": "vite-node src/build.ts",
+    "build": "vite build",
+    "watch": "vite build --watch --mode development --emptyOutDir",
+    "open-in-web": "vscode-test-web --extensionDevelopmentPath=. .",
+    "test": "vite-node src/test.ts",
     "changeset": "changeset",
     "clear": "rimraf vscode",
     "vsce-publish": "vsce publish"
   },
-  "contributes": {
-    "snippets": [
-      {
-        "language": "css",
-        "path": "./snippets/snippets.code-snippets"
-      },
-      {
-        "language": "scss",
-        "path": "./snippets/snippets.code-snippets"
-      },
-      {
-        "language": "less",
-        "path": "./snippets/snippets.code-snippets"
-      }
-    ]
-  },
   "devDependencies": {
-    "@babel/parser": "^7.24.4",
-    "@babel/traverse": "^7.24.1",
     "@changesets/changelog-github": "^0.5.0",
     "@changesets/cli": "^2.27.1",
-    "@types/babel__traverse": "^7.20.5",
     "@types/node": "^20.12.5",
-    "chalk": "^5.3.0",
+    "@types/vscode": "^1.88.0",
+    "@vscode/test-web": "^0.0.53",
     "eslint": "^9.0.0",
-    "p-limit": "^5.0.0",
     "rimraf": "^5.0.5",
-    "vite-node": "^1.4.0"
+    "vite": "^5.2.8"
   }
 }

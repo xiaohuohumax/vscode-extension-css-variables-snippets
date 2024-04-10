@@ -1,6 +1,8 @@
 !.vscode
 .git*
 node_modules
+out
+env
 
 .vscodeignore
 .editorconfig

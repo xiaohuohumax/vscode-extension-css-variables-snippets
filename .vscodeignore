@@ -1,6 +1,5 @@
-.vscode/**
-.vscode-test/**
-.gitignore
-vsc-extension-quickstart.md
-src/**
-types/**
+**/*
+!LICENSE
+!icon.png
+!out/extension.js
+!images/*.png
