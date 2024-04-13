@@ -2,4 +2,5 @@
 !LICENSE
 !icon.png
 !out/extension.js
+!package*.json
 !images/*.png

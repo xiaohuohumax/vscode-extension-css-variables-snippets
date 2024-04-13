@@ -16,6 +16,9 @@
   "categories": [
     "Snippets"
   ],
+  "activationEvents": [
+    "onLanguage"
+  ],
   "main": "./out/extension.js",
   "browser": "./out/extension.js",
   "keywords": [
@@ -27,15 +30,31 @@
     "vscode theme",
     "theme css variables"
   ],
-  "activationEvents": [
-    "onLanguage:css",
-    "onLanguage:less",
-    "onLanguage:scss",
-    "onLanguage:sass",
-    "onLanguage:stylus",
-    "onLanguage:html",
-    "onLanguage:svelte"
-  ],
+  "contributes": {
+    "configuration": [
+      {
+        "properties": {
+          "vscodeThemeCSSVariables.activationLanguages": {
+            "scope": "resource",
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "%vscodeThemeCSSVariables.configuration.activationLanguages.description%",
+            "default": [
+              "css",
+              "less",
+              "scss",
+              "sass",
+              "stylus",
+              "html",
+              "svelte"
+            ]
+          }
+        }
+      }
+    ]
+  },
   "scripts": {
     "vscode:prepublish": "npm run build",
     "build": "vite build",

@@ -47,7 +47,12 @@ VSCode Extensions Select `VSCode Theme CSS Variables`
 
 ![escape](/images/escape.png)
 
-## Language
+## ⚙ Options
+
+- `vscodeThemeCSSVariables.activationLanguages`: Activation languages
+  - `default`: [ "css", "less", "scss", "sass", "stylus", "html", "svelte" ]
+
+## Default Activation Language
 
 - css
 - less
