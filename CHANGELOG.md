@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.5.0
+
+### Minor Changes
+
+- [`e31450e`](https://github.com/xiaohuohumax/vscode-theme-css-variables/commit/e31450e2f49ad52d38131f1eb9a447de8c8b5e25) Thanks [@xiaohuohumax](https://github.com/xiaohuohumax)! - 添加配置-激活语言, 补全限定触发条件(--vsc|vscode)
+
 ## 0.4.0
 
 ### Minor Changes

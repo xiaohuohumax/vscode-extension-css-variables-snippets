@@ -2,7 +2,7 @@
   "name": "vscode-theme-css-variables",
   "displayName": "VSCode Theme CSS Variables",
   "description": "VSCode theme css variables snippets",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "private": true,
   "publisher": "xiaohuohumax",
   "icon": "icon.png",
